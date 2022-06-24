@@ -1,0 +1,39 @@
+@import "styles/main";
+
+.formContainer {
+  margin-top: 48px;
+  width: 100%;
+
+  .rowContainer {
+    display: flex;
+    flex-direction: row;
+
+    .inputContainer {
+      width: 48%;
+
+      &:first-of-type {
+        margin-right: 4%;
+      }
+    }
+  }
+
+  .inputContainer {
+    width: 100%;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+
+    input {
+      @extend .body;
+      height: 48px;
+      border: 1px solid $grey-color;
+      border-radius: 8px;
+      padding: 0 8px;
+    }
+  }
+
+  button {
+    margin-top: 24px;
+    width: 100%;
+  }
+}

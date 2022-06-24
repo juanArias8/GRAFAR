@@ -1,0 +1,96 @@
+@import "variables";
+
+@mixin xsmall {
+  @media #{$media-query-xsmall} {
+    @content;
+  }
+}
+
+@mixin small {
+  @media #{$media-query-small} {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media #{$media-query-medium} {
+    @content;
+  }
+}
+
+@mixin large {
+  @media #{$media-query-large} {
+    @content;
+  }
+}
+
+@mixin xlarge {
+  @media #{$media-query-xlarge} {
+    @content;
+  }
+}
+
+// ----------------------------------------------------------
+// devices
+// ----------------------------------------------------------
+@mixin phone {
+  @include xsmall {
+    @content;
+  }
+
+  @include small {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @include xsmall {
+    @content;
+  }
+
+  @include small {
+    @content;
+  }
+
+  @include medium {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @include medium {
+    @content;
+  }
+
+  @include large {
+    @content;
+  }
+}
+
+@mixin mobileLarge {
+  @include xsmall {
+    @content;
+  }
+
+  @include small {
+    @content;
+  }
+
+  @include medium {
+    @content;
+  }
+
+  @include large {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @include large {
+    @content;
+  }
+
+  @include xlarge {
+    @content;
+  }
+}

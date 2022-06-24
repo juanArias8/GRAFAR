@@ -1,0 +1,77 @@
+%fontColor {
+  color: $black-color;
+
+  &.main {
+    color: $main-color;
+  }
+
+  &.secondary {
+    color: $secondary-color;
+    text-shadow: none;
+  }
+
+  &.success {
+    color: $success-color;
+  }
+
+  &.info {
+    color: $info-color;
+  }
+
+  &.danger {
+    color: $danger-color;
+  }
+
+  &.white {
+    color: $white-color;
+  }
+
+  &.grey {
+    color: $grey-color;
+  }
+}
+
+%fontDecorators {
+  &.upper {
+    text-transform: uppercase;
+  }
+
+  &.capitalize {
+    text-transform: capitalize;
+  }
+
+  &.underline {
+    text-decoration: underline;
+  }
+
+  &.lineThrough {
+    text-decoration: line-through;
+  }
+
+  &.ellipsis {
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &.pointer {
+    cursor: pointer;
+  }
+
+  &.shadow {
+    text-shadow: 2px 2px $black-color;
+  }
+
+  &.center {
+    text-align: center !important;
+  }
+
+  &.left {
+    text-align: left !important;
+  }
+
+  &.right {
+    text-align: right !important;
+  }
+}

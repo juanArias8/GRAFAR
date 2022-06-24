@@ -1,0 +1,62 @@
+// -----------------------------------------------------
+// COLORS
+// -----------------------------------------------------
+$main-color: #00838f;
+$secondary-color: #222732;
+$success-color: #70cc6e;
+$danger-color: #da4444;
+$info-color: #01c2c2;
+$warning-color: #ea940d;
+$white-color: #ffffff;
+$shadow-color: rgba(0, 0, 0, 0.4);
+$black-color: #222732;
+$grey-color: #979797;
+$grey-color-2: #DFDFDF;
+$grey-color-light: #f1f1f1;
+$disabled-color: $grey-color;
+
+// -----------------------------------------------------
+// Gradients
+// -----------------------------------------------------
+$linear-gradiant-1: linear-gradient(
+                29.58deg,
+                rgba(48, 168, 255, 0.5) -5.91%,
+                rgba(22, 225, 160, 0.5) 92.88%
+);
+
+// -----------------------------------------------------
+// Box Shadow
+// -----------------------------------------------------
+$box-shadow: 0px 8px 24px $main-color;
+$box-shadow-left: -10px 24px 24px $main-color;
+$box-shadow-2: 0px 16px 56px $main-color;
+
+// -----------------------------------------------------
+// Gradients
+// -----------------------------------------------------
+$radial-gradient-1: radial-gradient(
+                145.87% 314.2% at 137.23% 142.92%,
+                $main-color 0%,
+                $secondary-color 100%
+);
+$linear-gradiant-1: linear-gradient(
+                29.58deg,
+                $main-color -5.91%,
+                $info-color 92.88%);
+
+// -----------------------------------------------------
+// Media query
+// -----------------------------------------------------
+$media-query-xsmall: "(max-width: 576px)";
+$media-query-small: "(min-width: 576px) and (max-width: 767px)";
+$media-query-medium: "(min-width: 768px) and (max-width: 1025px)";
+$media-query-large: "(min-width: 1026px) and (max-width: 1280px)";
+$media-query-xlarge: "(min-width: 1400px)";
+$media-query-screen-1024: "(min-width: 900px) and (max-width: 1100px) and (min-height: 750px) and (max-height: 1367px)";
+$media-query-mobile-large: "(min-width: 359px) and (max-width: 759px) and (min-height: 739px) and (max-height: 1100px)";
+$media-query-mobile-small: "(min-width: 360px) and (max-width: 575px) and (min-height: 639px) and (max-height: 738px)";
+
+// -----------------------------------------------------
+// Dimensions
+// -----------------------------------------------------
+$max-width-landing: 1200px;

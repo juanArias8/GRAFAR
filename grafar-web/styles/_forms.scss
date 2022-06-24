@@ -1,0 +1,169 @@
+.input-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 16px 0;
+
+  label {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    @extend .bodyBold;
+  }
+
+  input {
+    @extend .input;
+  }
+
+  textarea {
+    @extend .text-area;
+  }
+
+  &.checkbox {
+    @extend .checkbox;
+  }
+
+  @extend .small;
+}
+
+.input {
+  @extend .body;
+  color: $black-color;
+  outline: none;
+  height: 44px;
+  padding: 0 20px 0 20px;
+  background-color: $white-color;
+  border-radius: 8px;
+  border: 2px solid $grey-color-light;
+  text-shadow: none;
+
+  &:focus {
+    border: 2px solid lighten($main-color, 10%) !important;
+    transition: all 0.5s;
+    box-shadow: $box-shadow;
+
+    & + span {
+      color: lighten($main-color, 10%) !important;
+    }
+  }
+
+  &::placeholder {
+    @extend .body;
+    color: $grey-color !important;
+    text-shadow: none;
+  }
+
+  &.dark {
+    background-color: $secondary-color !important;
+    color: $grey-color !important;
+    border: 1px solid $grey-color !important;
+  }
+
+  &.icon {
+    padding-left: 36px;
+  }
+}
+
+.text-area {
+  @extend .input;
+  min-height: 200px;
+  height: auto;
+  padding: 16px 20px;
+
+  & + span {
+    width: 100%;
+    display: inline-flex;
+    justify-content: flex-end;
+  }
+}
+
+.input-checkbox-container {
+  transform: translateY(-3px);
+  min-width: 250px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 3px;
+
+  input {
+    @extend .checkbox;
+  }
+
+  label {
+    @extend .bodyBold;
+    margin-left: 20px;
+  }
+}
+
+.checkbox {
+  -webkit-appearance: none;
+  background-color: #fafafa;
+  border: 1px solid #cacece;
+  padding: 0;
+  border-radius: 0;
+  display: inline-block;
+  flex-direction: row-reverse;
+  position: relative;
+  width: 44px !important;
+  min-width: 44px !important;
+  max-width: 44px !important;
+  height: 44px !important;
+  min-height: 44px !important;
+  max-height: 44px !important;
+
+  &:checked {
+    background-color: $white-color;
+    border: none;
+
+    &:after {
+      transform: translate(8px, -20px);
+      content: '\2713';
+      position: absolute;
+      color: $main-color;
+      font-size: 60px;
+    }
+  }
+}
+
+.small {
+  @extend .body;
+  color: $danger-color !important;
+}
+
+.input-password-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 16px 0;
+
+  label {
+    @extend .bodyBold;
+    margin-bottom: 8px;
+  }
+
+  .input-row {
+    display: flex;
+
+    input {
+      width: 100%;
+      @extend .input;
+    }
+
+    i {
+      width: 0;
+      font-size: 32px;
+      height: 100%;
+      cursor: pointer;
+      transform: translate(-50px, 7px);
+      color: $grey-color;
+
+      &.active {
+        color: $main-color;
+      }
+    }
+  }
+
+  @extend .small;
+}
